@@ -590,7 +590,7 @@ void main_run()
     
     curX = destX; curY = destY; steps++;
   }
-    while(millis() < t + 220)  // dekh lena kitna agee jane se block ko pakkad pata h
+    while(millis() < t + 220)  // mind the distance till which gripper grips the block comfortably
     {
       line_follow();
     }
@@ -747,7 +747,7 @@ void main_run()
     steps++;
     
     
-    //=====================================Next Phase - To get the f**king jedi block=====================================
+    //=====================================Next Phase - To get the jedi block=====================================
     curX = a; curY = b;
     a = target[3]%10; b = target[3]/10;
   
@@ -804,7 +804,7 @@ void main_run()
     //digitalWrite(buzz,LOW);
     steps++;
     
-    //================================Final Phase - Put the JEdi in the a**hole================================================
+    //================================Final Phase - Put the JEdi in the assigned pit================================================
     curX = a; curY = b;
     a = target[4]%10; b = target[4]/10;
     while(1)
